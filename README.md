@@ -12,14 +12,24 @@ by TAPAS you can follow the instructions given below.
 Installation
 ------------
 
-Ubuntu 14.04 LTS does not ship gstreamer0.10-ffmpeg package, you need to add a repository with
-the following commands: ::
+Ubuntu does not ship gstreamer0.10-ffmpeg package since 14.04 LTS, you need to add a repository with
+the following commands.
 
+For Ubuntu 14.04 LTS: ::
+ 
     sudo add-apt-repository ppa:mc3man/trusty-media
     sudo apt-get update
+
+For Ubuntu 14.10 LTS: ::
+
+    sudo add-apt-repository ppa:mc3man/gstffmpeg-keep
+    sudo apt-get update
     
+All the required dependencies are listed below: ::
+
     sudo apt-get install python-twisted python-twisted-bin python-twisted-core python-twisted-web \
-        gstreamer0.10-plugins-* gstreamer0.10-ffmpeg gstreamer0.10-tools python-gst-1.0 libgstreamer0.10-dev
+        gstreamer0.10-plugins-* gstreamer0.10-ffmpeg gstreamer0.10-tools python-gst0.1 libgstreamer0.10-dev \
+        python-scipy python-psutil
 
 Usage
 -----
