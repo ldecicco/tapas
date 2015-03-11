@@ -9,8 +9,7 @@ you should check the documentation placed in the doc/ directory.
 If you are a user and you want to experiment with the control algorithms made available
 by TAPAS you can follow the instructions given below. 
 
-Today, TAPAS implement a "conventional" adpative streaming controller as described in the paper
-http://arxiv.org/pdf/1305.0510.pdf 
+Today, TAPAS implement a "conventional" adpative streaming controller as described in [this paper](http://arxiv.org/pdf/1305.0510.pdf) 
 
 Of course, we urge developers and researchers to send us their controllers so we can add them 
 to TAPAS. In this way reproducible experimental comparisons between different algorithm can be 
