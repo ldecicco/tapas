@@ -10,7 +10,7 @@
 # warranty of merchantability or fitness for a particular purpose.
 # See "LICENSE" in the source distribution for more information.
 import os, sys
-from utils_py.util import debug, format_bytes, CircularBuffer
+from utils_py.util import debug, format_bytes
 from BaseController import BaseController
 
 DEBUG = 1
