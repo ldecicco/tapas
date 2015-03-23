@@ -2,7 +2,7 @@
 TAPAS - Tool for rApid Prototyping of Adaptive Streaming algorithms
 ====================================================================
 
-TAPAS is a tool that allows rapid prototyping of Adaptive Streaming control algorithms.
+TAPAS is a tool that allows rapid prototyping and experimental evaluation of Adaptive Streaming control algorithms.
 If you are a developer and you want to design and test a new Adaptive Streaming control algorithm
 you should check the documentation placed in the doc/ directory.
 
