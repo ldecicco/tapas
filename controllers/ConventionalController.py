@@ -15,6 +15,11 @@ from BaseController import BaseController
 
 DEBUG = 1
 
+# This controller is an implementation of the Conventional Controller
+# described in Algorithm 1 of the paper:
+# Zhi Li, et al, "Probe and Adapt: Rate Adaptation for HTTP Video 
+# Streaming At Scale", IEEE JSAC, vol.32, no.4, Apr 2014
+
 class ConventionalController(BaseController):
 
     def __init__(self):
