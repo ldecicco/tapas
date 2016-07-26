@@ -84,6 +84,8 @@ class TapasPlayer(object):
            paused_time=0.0,
            last_fragment_size=0,
            last_download_time=0.0,
+           start_segment_request=0.0,
+           stop_segment_request=time.time(),
            downloaded_bytes=0,
            fragment_duration=0.0,
            rates=[]
@@ -483,6 +485,8 @@ class TapasPlayer(object):
            paused_time=self.getPausedTime(),
            last_fragment_size=self.getLastFragmentBytes(),
            last_download_time=self.getLastDownloadedTime(),
+           start_segment_request=self.getStartSegmentRequest(),
+           stop_segment_request=self.getStopSegmentRequest(),
            downloaded_bytes=self.getDownloadedBytes(),
            fragment_duration=self.parser.getFragmentDuration(),
            rates=self.getLevelRates(),
