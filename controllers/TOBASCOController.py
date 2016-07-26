@@ -72,7 +72,7 @@ class TOBASCOController(BaseController):
 
     def calcControlAction(self):
         # call the actual adaptation algorithm
-        next_level, Bdelay = self.algo()
+        next_level, Bdelay = self.adaptationAlgorithm()
 
         # debug prints
         debug(DEBUG, "%s feedback %s", self, self.feedback)
@@ -177,7 +177,7 @@ class TOBASCOController(BaseController):
         return sum_o / sum_u
 
     # the actual adaptation algorithm
-    def algo(self):
+    def adaptationAlgorithm(self):
         # several values that we need for the algorithm
         print(self.feedback)
         t = self.feedback["stop_segment_request"]
