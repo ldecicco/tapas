@@ -88,7 +88,7 @@ def select_player():
     player = TapasPlayer(controller=controller, parser=parser, media_engine=media_engine,
         log_sub_dir=log_sub_dir, log_period=0.1,
         max_buffer_time=80,
-        inactive_cycle=1, initial_level=1,
+        inactive_cycle=1, initial_level=0,
         use_persistent_connection=persistent_conn,
         check_warning_buffering=check_warning_buffering,
         stress_test=options['stress_test'])
