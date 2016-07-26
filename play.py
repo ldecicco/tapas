@@ -13,7 +13,7 @@ from twisted.python import usage, log
 
 class Options(usage.Options):
     optParameters = [
-        ('controller', 'a', 'conventional', 'Adaptive Algorithm [conventional|max]'),
+        ('controller', 'a', 'conventional', 'Adaptive Algorithm [conventional|tobasco|max]'),
         ('url', 'u', 'http://devimages.apple.com/iphone/samples/bipbop/bipbopall.m3u8', 'The playlist url. It determines the parser for the playlist'),
         ('media_engine', 'm',  'gst', 'Player type [gst|nodec|fake]'),
         ('log_sub_dir', 'l', None, 'Log sub-directory'),
@@ -55,6 +55,9 @@ def select_player():
     if options['controller'] == 'conventional':
         from controllers.ConventionalController import ConventionalController
         controller = ConventionalController()
+    if options['controller'] == 'tobasco':
+        from controllers.TOBASCOController import TOBASCOController
+        controller = TOBASCOController()
     elif options['controller'] == 'max':
         check_warning_buffering=False
         from controllers.MaxQualityController import MaxQualityController
