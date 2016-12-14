@@ -55,7 +55,7 @@ def select_player():
     if options['controller'] == 'conventional':
         from controllers.ConventionalController import ConventionalController
         controller = ConventionalController()
-    if options['controller'] == 'tobasco':
+    elif options['controller'] == 'tobasco':
         from controllers.TOBASCOController import TOBASCOController
         controller = TOBASCOController()
     elif options['controller'] == 'max':
